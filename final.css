@@ -7,7 +7,7 @@ body {
 }
 .imglogo {
   margin: auto;
-  height: auto;
+  height: 150px;
   display: block;
   justify-content: center;
 }
