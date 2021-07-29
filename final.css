@@ -1,8 +1,15 @@
+body {
+  background-color: #c0d7ef;
+}
+
 #main_Cont {
   background-color: #dcdcdc;
 }
 .imglogo {
-  margin-left: 20%;
+  margin: auto;
+  height: auto;
+  display: block;
+  justify-content: center;
 }
 
 #title {
@@ -13,26 +20,31 @@
 }
 
 #title h1 {
-  margin-top: 10%;
   font-size: 50px;
+  margin: 10% auto;
+  display: block;
+  justify-content: center;
 }
 
 #logbtn {
-  width: 180px;
-  margin-top: 20%;
-  margin-left: 20%;
+  font-size: 25px;
+  width: 200px;
+  font-weight: bold;
+  padding: auto;
+  margin: 20% auto;
+  display: block;
+  justify-content: center;
+  background-color: white;
 }
 
 .header {
-  background-color: rgba(3, 3, 107, 0.87);
+  background-color: #86608e;
 }
 
 /********************* Navigation bar *************************************/
-
-#navrow {
-  background-color: #e6e6fa;
+#nav {
+  background-color: #86608e;
 }
-
 .menu ul {
   margin-left: 100px;
 }
@@ -57,35 +69,41 @@
 }
 
 #searchbar {
-  width: 250px;
+  font-weight: bolder;
   background-color: #e6e6fa;
-  margin-top: 10px;
-  height: 50px;
 }
 
 /********************** Slider ***************************/
 #slider {
-  margin: 40px 10px 10px 100px;
-  width: 80%;
-  height: 550px;
-  background-color: #ffffe0;
+  padding: auto;
+  margin: auto;
+  display: block;
+  justify-content: center;
 }
 
+#slider img {
+  border: 2px solid rgb(44, 192, 25);
+}
 /************************** Popular offers ***************************/
 #pop_off {
   /* height: 550px; */
   background-color: #e6e6fa;
 }
 #po_img {
-  margin-top: 0px;
-  width: 400px;
-  height: 350px;
+  width: 300px;
+  height: 250px;
+  padding: auto;
+  margin: auto;
+  display: block;
+  justify-content: center;
 }
 
 #po_h2 {
   margin-top: 20px;
-  margin-left: 10;
+  margin-bottom: 20px;
+  padding: 20px;
   font-size: 45px;
+  background-color: #86608e;
 }
 
 /*************************** Popular store **************************/
@@ -98,14 +116,21 @@
 
 #pop_st h1 {
   margin-top: 20px;
-  margin-bottom: 30px;
+  padding: 20px;
+  margin-left: 10;
+  font-size: 45px;
+  background-color: #86608e;
 }
 
 #pt_img {
-  width: 400px;
+  width: 300px;
   height: 200px;
-  margin: 10px;
   border: 1px solid black;
+
+  padding: auto;
+  margin: 20px;
+  display: block;
+  justify-content: center;
 }
 
 /******************************** Top Coupon and offer ******************************/
@@ -116,16 +141,23 @@
 
 #top_cop h1 {
   margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 20px;
+  margin-left: 10;
+  font-size: 45px;
+  background-color: #86608e;
 }
 
 #topc_p_col {
-  width: 380px;
+  width: 300px;
   height: 220px;
   border: 1px solid black;
-  margin: 10px;
   background-color: #b0e0e6;
   overflow: hidden;
+
+  padding: auto;
+  margin: 20px;
+  display: block;
+  justify-content: center;
 }
 
 #topc_p_col h4 {
@@ -154,19 +186,21 @@
   margin-bottom: 30px;
 }
 #footer_img {
-  text-align: center;
-  margin-left: 250px;
+  margin: auto;
+  display: block;
+  justify-content: center;
+  display: flex;
 }
 
 #str_btn {
-  width: 140px;
-  height: 100px;
+  width: 100px;
+  height: 80px;
   margin: 10px;
 }
 
 #scl_btn {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 10px;
 }
 
