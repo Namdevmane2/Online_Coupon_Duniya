@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <meta name="google-signin-client_id" content="703145026289-qnlc01ij667494fh4i5rli5opndbn7f2.apps.googleusercontent.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.rawgit.com/oauth-io/oauth-js/c5af4519/dist/oauth.js"></script>
+    
+    <title>create a new account</title>
+
+    <style>
+        .btn{
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .form-control{
+            height: 35px;
+            padding-left: 5;
+        }
+        .divider{
+            position: relative;
+            text-align: center;
+            margin: 15px 0px;
+        }
+        .divider span{
+            padding: 8px;
+            position: relative;
+            font-size: 15px;
+            z-index: 2 !important;
+        }
+        .divider::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            border-bottom: 1px solid rgb(17, 14, 14);
+            top: 50%;
+            left: 0;
+            z-index: 1 !important;
+        }
+        .input-group-text{
+            font-size: 15px;
+            height: 35px;
+            
+        }
+        #user{
+            font-size:smaller;
+            font-weight: 600;
+        }
+        .container{
+           border-radius: 10px;
+           box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.034) 0 6.7px 5.3px rgba(0,0,0,0.048);
+           overflow: hidden;
+           width: calc(100vw-65vw);
+           margin-top: 50px;
+           
+        }
+       #mob{
+           height: 35px;
+       }
+       
+    </style>
+
+  </head>
+  <body>
+   <!-- going to start signup design -->
+
+
+   <div class="container">
+        <div class="card bg-light"  style="background: url('2.jpg') no-repeat center fixed; " >
+            <div class="card-body mx-auto" >
+                <h4 class="card-title mt-3 text-center">create Account</h4>
+                    <p class="text-center">Welcome to Coupon Duniya</p>
+
+                      <div class="col-md-12">
+                        <a id="google-button" class="btn btn-outline-dark btn-social btn-google btn-danger" role="button" style="text-transform:none">
+                          <img width="20px" style="margin-bottom:3px; margin-right:5px" alt="Google sign-in" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                          Login with Google
+                        </a>
+                    <script>
+                    $('#google-button').on('click', function() {
+                    // Initialize with your OAuth.io app public key
+                    OAuth.initialize('3F4OyUpxqFxLi6itO4fL2Cl');
+                    // Use popup for OAuth
+                    OAuth.popup('google').then(google => {
+                    console.log('google:',google);
+                    // Retrieves user data from oauth provider
+                    // Prompts 'welcome' message with User's email on successful login
+                    // #me() is a convenient method to retrieve user data without requiring you
+                    // to know which OAuth provider url to call
+                    google.me().then(data => {
+                        console.log('me data:', data);
+                        alert('Google says your email is:' + data.email + ".\nView browser 'Console Log' for more details");
+                    });
+                    // Retrieves user data from OAuth provider by using #get() and
+                    // OAuth provider url
+                    google.get('/plus/v1/people/me').then(data => {
+                        console.log('self data:', data);
+                    })
+                    });
+                })  
+                    </script>
+        </div>
+ 
+                        <div class="col-md-12"><a href="#" class="btn btn-primary facebook btn-primary"> <span>Login with Facebook</span> <i class="fab fa-facebook"></i> </a> </div>
+
+                     <p class="divider mt-3"><span class="bg-light">OR</span></p>
+
+                <form action="#!" id="form1">
+                    <!-- name feild -->
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                               <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" 
+                        class="form-control" 
+                        id="name" 
+                        aria-describedby="emailHelp"
+                        placeholder="Enter name" /> 
+                        
+                    </div><span id="namespan" style="color: red;"></span>
+                    <!-- email feild -->
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                        <input type="email" 
+                        class="form-control" 
+                        id="Email1" 
+                        aria-describedby="emailHelp"
+                        placeholder="Enter Email" 
+                        /> 
+                    </div>
+                    <span id="emailspan" style="color: red;"></span>
+
+                    <!-- phone feild -->
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                        </div>
+                        <select class="custome-select mb-2" id="mob">
+                            <option value="">+91</option>
+                            <option value="">+92</option>
+                            <option value="">+93</option>
+                        </select>
+                        <input type="number" class="form-control" id="mobilenumber" placeholder="Enter Phone">
+                    </div>
+                    <span id="mobile" style="color: red;"></span>
+                    <!-- user type feild -->
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-building"></i>
+                            </span>
+                        </div>
+                        <select class="form-control" id="user">
+                            <option selected disabled>-----Select User Type-----</option>
+                            <option>Customer</option>
+                            <option id="retail" onclick="retail()">Retailer</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>
+
+
+                    <!-- password feild -->
+                    
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                        </div>
+                        <input type="password" 
+                        class="form-control" 
+                        placeholder="Enter password" 
+                        id="pass1"> 
+                    </div>
+                    <span id="pass1span" style="color: red;"></span>
+                     <!--repeate password feild -->
+                     
+                    <div class="form-group input-group m-2">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">
+                                <i class="fa fa-unlock"></i>
+                            </span>
+                        </div>
+                        <input type="password" 
+                        class="form-control" 
+                        placeholder="Confirm password" 
+                        id="pass2"> 
+                    </div>
+                    <span id="pass2span" style="color: red;"></span>
+           
+                    <button type="submit" class="btn btn-block btn-success m-2" id="button3" onclick="registration()" >Create</button>
+                    <p class="text-center mt-2" id="login">Have an Acoount?<a href="login.html" style="padding-left: 5px; font-weight: bold; color: rgb(53, 23, 161);">Log In</a></p>
+                </form>
+
+        </div>
+        <script src="register.js"></script>
+
+    </div>
+
+   </div>
+ 
+  </body>
+</html>
