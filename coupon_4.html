@@ -36,6 +36,13 @@
            font-weight: 700;
            font-size: xx-large;
         }
+        #button {
+            margin: 50px;
+        
+            color: white;
+            text-decoration: none;
+
+        }
     </style>
 </head>
 <body>
@@ -45,13 +52,20 @@
           <h5 class="card-title" style="color: green; padding: 10px;"><i class="fas fa-check-circle" style="padding-right:10px ;" ></i>Code Successfully Copied!</h5>
           <p class="card-text">Paste this code on checkout & carry on shopping</p>
           <div class="card bg-primary" id="container2"><label>BD4FAs</label></div>
-          <a href="#" class="btn btn-link" onclick="">Copy And Continue</a>
+          <button type="button" class="btn btn-success" onclick="copyCode()" id="button"> Copy Code </button>
+
         </div>
         <div class="card-footer text-muted">
             <a href="#" class="btn btn-link" onclick="" style="color: blue;">Go Back</a>
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+        function copyCode() {
+            alert("Code copy Successful")
+        }
+    </script>
 
 </body>
 </html>
