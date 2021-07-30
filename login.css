@@ -3,73 +3,80 @@
      margin:0px;
      background-color: rgb(41, 171, 175); color:#f7f7f7; font-family:Arial, Helvetica, sans-serif;
    }*/
-   body{
-    background: url(3.jpg) no-repeat center center fixed;
-    background-size: cover;
-    padding: 20 20 20 20;
-   
+body {
+  background: url(3.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 20 20 20 20;
 }
-   #main
-   {
-     width:700px; height:300px; 
-     margin-left:auto;
-      margin-right:auto;
-      border-radius:8px;
-      padding-left:10px; 
-      margin-top:100px;
-     border-top:3px double #161515; 
-     border-bottom:3px double #0e0c0c; 
-     border-left:3px double #131212; 
-     border-right:3px double #131010; 
-     padding-top:20px;
-   }
-   #main table
-   {
-     font-family:"Comic Sans MS", cursive;
-   } 
-  /* css code for textbox */
-  #main .tb
-  {
-    height:30px; width:300px; 
-    border:1px solid #0f0d86; 
-    color:#262927; 
-    font-weight:bold; 
-    border:3px solid #159474; 
-    opacity:0.9;
-    padding: 2px;
-  }
 
-   /* css code for button*/
-   #main .btn
-   {
-    width:80px; height:32px; 
-    outline:none;  
-    font-weight:bold; 
-    border:3px solid #27a465; text-shadow: 0px 0.5px 0.5px #fff;
-    background-color: rgb(203, 204, 209);	
-    border-radius: 2px; 
-    font-weight: 600; 
-    color: #191d1b; letter-spacing: 1px; 
-    font-size:14px; 
-    -webkit-transition: 1s; 
-    -moz-transition: 1s; 
-    transition: 1s;
-    padding: 2px;
-   }
+input {
+}
 
-   #main #user{
-     height: 30px;
-     border: 3px solid #159474;
-     opacity: 0.9;
-     color:#262927; 
-     font-weight:bold; 
-     padding: 2px;
-   }
-  
-   #main .btn:hover
-   {
-    background-color:#289183; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px solid #f1f1f1;
-   }
-  .h-tag h2{
-       margin-left: 230px;
-   }
+#main {
+  width: 700px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  padding-left: 10px;
+  margin-top: 100px;
+  border-top: 3px double #161515;
+  border-bottom: 3px double #0e0c0c;
+  border-left: 3px double #131212;
+  border-right: 3px double #131010;
+  padding-top: 20px;
+}
+#main table {
+  font-family: "Comic Sans MS", cursive;
+}
+/* css code for textbox */
+#main .tb {
+  height: 30px;
+  width: 300px;
+  border: 1px solid #0f0d86;
+  color: #262927;
+  font-weight: bold;
+  border: 3px solid #159474;
+  opacity: 0.9;
+  padding: 2px;
+}
+
+/* css code for button*/
+#main .btn {
+  width: 100px;
+  height: 70px;
+  outline: none;
+  font-weight: bold;
+  border: 3px solid #27a465;
+  text-shadow: 0px 0.5px 0.5px #fff;
+  background-color: rgb(203, 204, 209);
+  border-radius: 2px;
+  font-weight: 600;
+  color: #191d1b;
+  letter-spacing: 1px;
+  font-size: 14px;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+  padding: 2px;
+}
+
+#main #user {
+  height: 30px;
+  border: 3px solid #159474;
+  opacity: 0.9;
+  color: #262927;
+  font-weight: bold;
+  padding: 2px;
+}
+
+#main .btn:hover {
+  background-color: #289183;
+  outline: none;
+  border-radius: 2px;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+.h-tag h2 {
+  margin-left: 230px;
+}
