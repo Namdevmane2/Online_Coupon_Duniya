@@ -48,9 +48,9 @@ function registration() {
     document.getElementById("pass1span").innerHTML =
       "** Password max length is 12";
   } else {
-    alert("Thank You for register Welcome to Coupon Dunia!!");
-
-    window.location = URL("login.html");
+    alert("Thank You for register Welcome to Coupon Duniya !!");
+    location.replace((src = "Login.html"), (target = "_blank"));
+    // window.location = url("login.html");
   }
 }
 
