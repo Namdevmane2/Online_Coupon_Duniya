@@ -13,31 +13,37 @@
         margin-top: 20px;
     }
     .header {
-        /* background-color: hsla(234, 85%, 37%, 0.836); */
-        background-color: rgba(3, 3, 107, 0.87);
-
+        background-color: #1974D2;        
     }
     
     p {
         font-size: 20px;
         font-weight: bold;
     }
-    
-    img {
-        width: 400px ;
-        height: 200px;
-    }
-    #title {
-    text-align: center;
-    margin-top: 40px;
-    }
 
     .body {
-        width: 80%;
-        margin-left: 10%;
-        
+        width: 70%;
     }
+   
+    #title {
+    text-align: center;
+    margin-top: 60px;        
+    }
+
+    .logo_img {
+        width: 50%;
+    
+    }
+
+    @media (max-width:1000px){
+        .logo_img {
+            width: 200px;
+            height: 100px;
+            
+        }
+    } 
     h1 {
+        font-size: 60px;
         margin: 25px;
         font-weight: 800;
        
@@ -46,10 +52,11 @@
         text-decoration: none;
     }
     .coupon_box {
-        margin: 15px;
         padding: 10px;
         background-color: rgb(212, 206, 197);
-
+        margin: auto;
+        display: block;
+        justify-content: center;
     }
     p{
        
@@ -65,20 +72,15 @@
     #shead{
         font-family:cursive;
         font-weight: bold;
-
         color: floralwhite;
     }
     #box {
         background-color: #5E5A80;
     }
     body {
-        background-color:#7E587E;
+        background-color:#92C7C7;
     }
 
-    #logo img {
-        width: 400px;
-        height: 200px;
-    }
 
     
     </style>
@@ -86,14 +88,22 @@
 <body>
     <div class="container" id="main_con">
         <div class="header ">
-            <div class="row" id="logo">
-                <div class="col-sm-12 col-md-6  col-lg-4">
-                    <a href="https://www.zomato.com/pune" target="_blank">
-                        <div><img src="./images/zomato-1937646-1637644.png" alt="" class="icon "></div>
-                    </a>
+            <div class="row">
+                <div class="col-sm-12 col-md-12  col-lg-4 text-center" >
+                    <div ogo_img>
+                        <a href="https://www.zomato.com/pune" target="_blank">
+                            <div class="l text-center" >
+                                <img src="./images/zomato-1937646-1637644.png" alt="" class="icon ">
+                            </div>
+                        </a>
+                    </div>
+                   
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 text-center" id ="title">
-                    <h1 id="shead"> Zomato Coupon </h1>
+                <div class="col-sm-12 col-md-12 col-lg-6 text-center" >
+                    <div id ="title">
+                        <h1 id="shead"> Zomato Coupon </h1>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -103,7 +113,7 @@
         <br> <br> 
         <div class="body">
             <div class="row border" id="box">
-                <div class="col-8">
+                <div class="col-10">
                     <a href="coupon_5.html" target="_blank">
                         <div class="coupon_box border">
                             <h1> 20% OFF</h1>
@@ -116,7 +126,7 @@
                
             </div> <br> <br>
             <div class="row border" id="box"> 
-                <div class="col-8">
+                <div class="col-10">
                     <a  href="coupon_2.html"  target="_blank">
                         <div class="coupon_box border">
                             <h1> 30% OFF</h1>
@@ -128,7 +138,7 @@
                 
             </div> <br> <br>
             <div class="row border" id="box">
-                <div class="col-8">
+                <div class="col-10">
                     <a href="coupon_4.html" target="_blank">
                         <div class="coupon_box border">
                             <h1> 50% OFF</h1>

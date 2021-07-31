@@ -9,8 +9,9 @@ function registration() {
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
   var letters = /^[A-Za-z]+$/;
   var filter =
-    /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{3})+\.)+([a-zA-Z0-9]{3,3})+$/;
+    /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+).([a-z]{2,20})(.[a-z]{2,8})?$/;
   var length = name.length;
+  var mobno = /^[7-9]\d{9}$/;
 
   if (name == "") {
     alert("Please enter your name");
@@ -25,12 +26,12 @@ function registration() {
       "** Please enter your user email id";
   } else if (!filter.test(email)) {
     document.getElementById("emailspan").innerHTML = "** Invalid email";
-  } else if (mobileno == "") {
+  } else if (!mobno.test(mobileno)) {
     document.getElementById("mobile").innerHTML =
       "** Please enter your user Mobile No";
-  } else if (mobileno == 0 || mobileno.length < 10 || mobileno.length > 10) {
+  } /*else if (mobileno == 0 || mobileno.length < 10 || mobileno.length > 10) {
     document.getElementById("mobile").innerHTML = "** Invalid Mobile Number";
-  } else if (pwd == "") {
+  }*/ else if (pwd == "") {
     document.getElementById("pass1span").innerHTML = "** Please enter Password";
   } else if (cpwd == "") {
     document.getElementById("pass2span").innerHTML =
@@ -49,7 +50,7 @@ function registration() {
   } else {
     alert("Thank You for register Welcome to Coupon Dunia!!");
 
-    window.location = " ";
+    window.location = URL("login.html");
   }
 }
 

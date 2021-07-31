@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+h2 {
+  background-color: aquamarine;
+  font-size: 50px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+  background-color: #5EFB6E;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Online Coupon Duniya is a trusted brand and a pioneer in affiliate e-commerce scene in India. We are known for maintaining high quality standards through our unique user interface and user experience. We have been sustaining and preserving our USP, which is to provide the most authentic and updated coupons and deals. Today, Online Coupon Duniya is the top player in the coupons and deals industry. But we aren’t new to media coverage, in fact the biggest news channels and newspapers in the country along with technological blogs have featured us on their platform. The likes of 'CNBC Awaaz' have hailed us as Internet Heroes thus recognizing one of the most successful E-commerce affiliate start-ups from India.</p>
+  <p> Our strategic B2B partnerships with some powerful e-commerce companies and strong network in the IT sector has benefited not only us but also our affiliates. Through our business partnership programs, we help a company increase its revenue, create brand awareness and expand its reach. Our network includes a wide range of merchants and strategic companies and our aim is to cross-promote each other in providing the best deals to the end-consumer. Online Coupon Duniya receives partnership requests in bulk everyday but we intent to partner with businesses that offer our users just what they want from us. In the end it’s all about helping our users save on everything!</p>
+</div> -->
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row" id="box_1">
+  <div class="column">
+    <div class="card">
+      <!-- <img src="image.jpg" alt="Jane" style="width:100%;height: 350px; border-radius: 50%;"> -->
+      <div class="container">
+        <h2>Mansi Malunjkar</h2>
+        <p class="title">Founder</p>
+        <p>Mansi Malunjkar </p>
+        <p> developer Coupon Dunia Website.</p>
+        <p>mansimalunjkar2018@gmail.com</p>
+        <p><button class="button" onclick="window.location.href='https://www.linkedin.com/in/mansi-malunjkar-166a02184'">Contact</button></p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="column">
+    <div class="card">
+      <!-- <img src="" alt="Mike" style="width:100%"> -->
+      <div class="container">
+        <h2>Namdev Mane</h2>
+        <p class="title">Founder</p>
+        <p>Namdev Mane  </p>
+        <p> designer and developer of Coupon Dunia Website.       </p>
+        <p>manenamdev2@gmail.com</p>
+        <p><button class="button" onclick="">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+      <div class="container">
+        <h2>Omkar Chavan</h2>
+        <p  class="title">Founder</p>
+        <p> Omkar Chavan </p>
+        <p> designer and developer of Coupon Dunia Website.       </p>
+        <p> omkarchavan1198@gmail.com</p>
+        <p><button class="button" onclick="">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

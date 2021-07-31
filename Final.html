@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <div class="container ">
+    <div class="container " id="main_box">
       
       <div class="container">
         <div class="header"> 
@@ -45,18 +45,18 @@
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
                 <button class="navbar-toggler border bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="nav">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon bg-success"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="Final.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">about </a>
+                        <a class="nav-link active" aria-current="page" href="about us.html">about </a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">contact</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">contact</a>
                     </li>
                       
                       <li class="nav-item dropdown">
@@ -85,8 +85,8 @@
           </nav>
         </div>
       </div>
-     <br> <br>
-        <div class="container" id="main_Cont">
+      <br> <br>
+      <div class="container" id="main_Cont">
   
             <div class="row" id="slide_box">
               
@@ -202,12 +202,12 @@
             </div> <br>
 
             <div class="container m-1" id="top_cop">
-              <div>
-                <h1>Top Coupons & Offers</h1>
-                <div class="row">
-
-                  <div class="col-sm-12 col-md-4 col-lg-4 m-1" id="topc_p_col">
-                    <div id="topc_b">
+              <div >
+                
+                <div class="row " >
+                  <h1>Top Coupons & Offers</h1>
+                  <div class="col-sm-12 col-md-4 col-lg-4 m-5" id="topc_p_col">
+                    <div class="topc">
                       <a href="coupon_1.html" target="_blank">
                         <h4 >Rs.130 OFF</h4>
                         <p>Flat ₹80 OFF + ₹50 Cashback On ₹949 (All Users)</p>
@@ -215,8 +215,8 @@
                     </div>
                   </div>
   
-                  <div class="col-sm-12 col-md-4 col-lg-4 m-1" id="topc_p_col">
-                    <div id="topc_b">
+                  <div class="col-sm-12 col-md-4 col-lg-4 m-5" id="topc_p_col">
+                    <div >
                       <a href="coupon_2.html" target="_blank" >
                         <h4> 40% OFF</h4>
                         <p> Todays Deals Of The Day-Up To 40% OFF On All Product  </p>
@@ -224,8 +224,8 @@
                     </div>
                   </div>
   
-                  <div class="col-sm-12 col-md-4 col-lg-4 m-1" id="topc_p_col">
-                    <div id="topc_b">
+                  <div class="col-sm-12 col-md-4 col-lg-4 m-5" id="topc_p_col">
+                    <div >
                       <a href="coupon_3.html" target="_blank">
                         <h4> 20% OFF </h4>
                         <p>Flat 20% OFF +  Upto 600 rs Cashback on 1st Order </p>
@@ -234,8 +234,8 @@
                   </div> 
   
                   <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-1" id="topc_p_col">
-                      <div id="topc_b">
+                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-5" id="topc_p_col">
+                      <div >
                         <a href="coupon_4.html" target="_blank ">
                           <h4>Rs.1000 OFF</h4>
                           <p> domestic Flights-Grab Rs.1000 OFF + Extra Rs.800 SuperCash </p>
@@ -243,8 +243,8 @@
                       </div>
                     </div>
   
-                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-1" id="topc_p_col">
-                      <div id="topc_b">
+                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-5" id="topc_p_col">
+                      <div >
                         <a href="coupon_5.html" target="_blank">
                           <h4>Rs.50% OFF</h4>
                           <p>  Flash Deal Get 50% Of On the all product and Cosmetics </p>
@@ -252,8 +252,8 @@
                       </div>
                     </div>
   
-                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-1" id="topc_p_col">
-                      <div id="topc_b">
+                    <div class="col-sm-12 col-md-4 col-lg-4 mb-5 m-5" id="topc_p_col">
+                      <div >
                         <a href="coupon_6.html" target="_blank">
                           <h4> 40% OFF </h4>
                           <p> Upto 40% discount on the electronics product and machine </p>
@@ -323,7 +323,116 @@
         </div>
 
       </div>
+    </div>
 
+
+    <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('#title').mouseover(function(){
+                    $(this).css({
+                        
+                        "backgroundColor":"#728FCE" ,
+                        "border":"1px solid red"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $('#title').mouseout(function(){
+                    $(this).css({
+                        "textDecoration":"none",
+                        "backgroundColor":"#2b3856" ,
+                        "border":"none"
+                    });
+                });
+            });
+
+            $(document).ready(function(){
+                $('#slider').mouseover(function(){
+                    $(this).css({
+                        "opacity":"0.5"
+                        
+                    });
+                });
+            });
+
+
+            $(document).ready(function(){
+                $('#slider').mouseout(function(){
+                    $(this).css({
+                        "opacity":"1"
+                        
+                    });
+                });
+            });
+
+
+            
+            $(document).ready(function(){
+                $('#pop_off').mouseover(function(){
+                    $(this).css({
+                        
+                        "backgroundColor":"#C3FDB8" ,
+                        "border":"1px solid yellow"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $('#pop_off').mouseout(function(){
+                    $(this).css({
+                        "textDecoration":"none",
+                        "backgroundColor":" #afeeee" ,
+                        "border":"none"
+                    });
+                });
+            });
+            
+
+            
+            
+            $(document).ready(function(){
+                $('#pop_st').mouseover(function(){
+                    $(this).css({
+                        
+                        "backgroundColor":"#CCFB5D" ,
+                        "border":"1px solid blue"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $('#pop_st').mouseout(function(){
+                    $(this).css({
+                        "textDecoration":"none",
+                        "backgroundColor":"#bcb88a" ,
+                        "border":"none"
+                    });
+                });
+            });
+
+
+            
+            $(document).ready(function(){
+                $('#top_cop').mouseover(function(){
+                    $(this).css({
+                        
+                        "backgroundColor":"#728FCE" ,
+                        "border":"1px solid yellow"
+                    });
+                });
+            });
+            $(document).ready(function(){
+                $('#top_cop').mouseout(function(){
+                    $(this).css({
+                        "textDecoration":"none",
+                        "backgroundColor":"#ffe4c4" ,
+                        "border":"none"
+                    });
+                });
+            });
+            
+    
+    
+    </script>
     
 </body>
 </html>
