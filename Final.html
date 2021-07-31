@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="final.css">
     <script src="final.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--<script src="searchquery.js"></script> -->
@@ -16,34 +17,33 @@
     <div class="container ">
       
       <div class="container">
-        <!-- <div class="header">  -->
+        <div class="header"> 
             <div class="row" id="head_row"> 
-                <div class=" col-sm-12 col-md-12 col-lg-3 border"> 
+                <div class=" col-sm-12 col-md-12 col-lg-3 "> 
                     <img src="images/logo1.jpeg " alt="" srcset="" class="imglogo ">
                 </div>
                 
-                <div class="col-sm-12 col-md-12 col-lg-6 border" id="title" > 
+                <div class="col-sm-12 col-md-12 col-lg-6 " id="title"> 
                   <div >
                     <h1> Online Coupon Duniya </h1>
                   </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3  border">
-                  <div>
+                <div class="col-sm-12 col-md-12 col-lg-3 ">
+                  <div id="login_div">
                     <a href="Login.html">
-                      <button type="button" class="btn " id="logbtn" >Login/sign_up</button>
+                      <button type="button" class="btn " id="logbtn" >Login</button>
                     </a>
                   </div>
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
       </div>
-      <br>
-      <div class="row border ">
+      <div class="row">
         <div class="container menu">
-          <nav class="navbar navbar-expand-lg ">
+          <nav class="navbar navbar-expand-lg border ">
             <div class="container-fluid">
                 <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="nav">
+                <button class="navbar-toggler border bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="nav">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -77,20 +77,18 @@
                   <form class="d-flex" id="searchbar">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
                       <ul class="listgroup" id="result"></ul>
-                      <button class="btn btn-outline-success" type="submit" >Search</button>
+                      <button class="btn btn-outline-success" type="submit" id="searchbtn" >Search</button>
                   </form>
                 </div>
             </div>
           </nav>
         </div>
       </div>
-     <br>
-        <div class="container border" id="main_Cont">
-          <div>
-
-            <div class="row">
-          
-                
+     <br> <br>
+        <div class="container" id="main_Cont">
+  
+            <div class="row" id="slide_box">
+              
                 <div class="col-sm-3 col-md-3 col-lg-6  border" id="slider">  
                   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -132,30 +130,31 @@
                   </div>
                 </div>
             
-            </div> <br>
-          </div>
+            </div> 
+            <br>
+            <br>
             
-            <div class="row border " id="pop_off">
-              <h2 id="po_h2"> Popular offers of the day </h2>
-              <div class=" col-sm-12 col-md-6 col-lg-4" >
+            <div class="row" id="pop_off">
+
+              <h2 id="po_h2"> Popular offers of the day </h2> 
+              <div class=" col-sm-12 col-md-6 col-lg-4 mb-5 mt-5" >
                 <a href="zomato.html" target="_blank">
                   <img src="./images/pizza.jpeg" alt="" srcset="" id="po_img" class="img-fluid">
                 </a>
 
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 ">
+              <div class="col-sm-12 col-md-6 col-lg-4 mb-5 mt-5">
                 <a href="makemytrip.html" target="_blank">
                   <img src="./images/po2.jpg" alt="" srcset="" id="po_img" class="img-fluid">
                 </a>
               </div>
-              <div class="col-sm-12 col-md-6 col-lg-4 ">
+              <div class="col-sm-12 col-md-6 col-lg-4 mt-5">
                 <a href="amazon.html" target="_blank">
                   <img src="./images/po4.jpg" alt="" srcset="" id="po_img" class="img-fluid">
                 </a>
               </div>
-            </div> <br>
-
-            <div class="container border text-center" id="pop_st">
+            </div> <br><br>
+            <div class="container text-center" id="pop_st">
               <div class="row">
                 <h1> Popular Stores </h1>
                 <div class="col-sm-6 col-md-6 col-lg-4 ">
@@ -175,17 +174,17 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-4 ">
+                <div class="col-sm-6 col-md-6 col-lg-4 mb-5">
                   <a href="zomato.html"  target="_blank">
                     <img src="./images/pt6.jpeg" alt="" srcset="" id="pt_img" class="img-fluid">
                   </a>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 ">
+                <div class="col-sm-6 col-md-6 col-lg-4 mb-5">
                   <a href="ajio.html"  target="_blank">
                     <img src="./images/pt5.jpeg" alt="" srcset="" id="pt_img" class="img-fluid">
                   </a>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 ">
+                <div class="col-sm-6 col-md-6 col-lg-4 mb-5">
                   <a href="Swigie.html"  target="_blank">
                     <img src="./images/pt8.jpeg" alt="" srcset="" id="pt_img" class="img-fluid">
                   </a>
@@ -193,22 +192,22 @@
               </div>
             </div> <br>
 
-            <div class="container border m-1" id="top_cop">
+            <div class="container m-1" id="top_cop">
               <div>
                 <h1>Top Coupons & Offers</h1>
                 <div class="row">
 
                   <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                    <div>
+                    <div id="topc_b" onclick="simple()" >
                       <a href="coupon_1.html" target="_blank">
-                        <h4>Rs.130 OFF</h4>
+                        <h4 >Rs.130 OFF</h4>
                         <p>Flat ₹80 OFF + ₹50 Cashback On ₹949 (All Users)</p>
                       </a>
                     </div>
                   </div>
   
                   <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                    <div>
+                    <div id="topc_b">
                       <a href="coupon_2.html" target="_blank" >
                         <h4> 40% OFF</h4>
                         <p> Todays Deals Of The Day-Up To 40% OFF On All Product  </p>
@@ -217,17 +216,17 @@
                   </div>
   
                   <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                    <div>
+                    <div id="topc_b">
                       <a href="coupon_3.html" target="_blank">
                         <h4> 20% OFF </h4>
                         <p>Flat 20% OFF +  Upto 600 rs Cashback on 1st Order </p>
                       </a>
                     </div>
-                  </div>
+                  </div> 
   
                   <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                      <div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5" id="topc_p_col">
+                      <div id="topc_b">
                         <a href="coupon_4.html" target="_blank">
                           <h4>Rs.1000 OFF</h4>
                           <p> domestic Flights-Grab Rs.1000 OFF + Extra Rs.800 SuperCash </p>
@@ -235,8 +234,8 @@
                       </div>
                     </div>
   
-                    <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                      <div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-5" id="topc_p_col">
+                      <div id="topc_b">
                         <a href="coupon_5.html" target="_blank">
                           <h4>Rs.50% OFF</h4>
                           <p>  Flash Deal Get 50% Of On the all product and Cosmetics </p>
@@ -244,22 +243,20 @@
                       </div>
                     </div>
   
-                    <div class="col-sm-12 col-md-6 col-lg-4 " id="topc_p_col">
-                      <div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 mg-5" id="topc_p_col">
+                      <div id="topc_b">
                         <a href="coupon_6.html" target="_blank">
                           <h4>40% OFF </h4>
                           <p> Upto0% discount on the electronics product and machine </p>
                         </a>
                       </div>
                     </div>
-  
                 </div>
                 </div> 
               </div>
-        
           </div>
           <br>
-          <div class="container border m-1" id="footer">
+          <div class="container m-1" id="footer">
 <!-- 
           <div class="row" >
             <div class="col-sm-12 col-md-12 col-lg-12 text-center"  id="footer_logo">
@@ -291,11 +288,11 @@
                 <img src="./images/instagram.jpg" alt="" srcset="" id="scl_btn" class="img-fluid" >
               </a>
             </div>
-            <div class=" col-sm-2 col-md-2 col-lg-2 " target="_blank">
+            <!-- <div class=" col-sm-2 col-md-2 col-lg-2 " target="_blank">
               <a type="button" href="https://twitter.com/login">
                 <img src="./images/twitter.jpg" alt="" srcset="" id="scl_btn" class="img-fluid">
               </a>
-            </div>
+            </div> -->
           </div>
             
             <hr id="footer_hr">
@@ -321,6 +318,57 @@
     
 </body>
 </html>
+
+<!-- <script>
+$(document).ready(function () {
+  $("#topc_b").mouseOver(function () {
+    $(this).css("color", "red");
+  });
+});
+
+$(document).ready(function(){
+                $('#header').click(function(){
+                    $('#title').css({
+                        "filter":"blur(5px)",
+						              "opacity":"5"
+                    });
+                });
+            });
+					 -->
+
+<!-- 
+// $(document).ready(function () {
+//   $("#title").mouseover(function () {
+//     $(this).css("background-color", "red");
+//   });
+// });
+
+// $(document).ready(function () {
+//   $("#title").mouseout(function () {
+//     $(this).css("background-color", "yellow");
+//   });
+// });
+
+
+// $(document).ready(function () {
+//   $("#title").mouseover(function () {
+//     $(this).css("border", "red");
+//   }); -->
+<!-- // });
+
+// $(document).ready(function () {
+//   $("#title").mouseout(function () {
+//     $(this).css("backgroundColor", "white");
+//   });
+// });
+
+
+// $(document).ready(function () {
+//   $("#title").blur(function () {
+//     $(this).css("background-color", "yellow");
+//   });
+// }); -->
+<!-- </script> -->
 <script>
   $(document).ready(function(){
 $('#search').keyup(function(){
@@ -336,4 +384,4 @@ $('#search').keyup(function(){
     })
 });
 });
-</script>
+</script> -->
