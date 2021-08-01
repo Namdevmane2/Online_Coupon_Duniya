@@ -77,11 +77,19 @@
   font-weight: bold;
   border: 1px solid #86608e;
   padding: auto;
-  margin: 30px 10px;
+  color: rgba(64, 122, 230, 0.884);
+  margin: 30px;
   display: block;
   justify-content: center;
-  background-color: #00bfff;
+  background-color: white;
   text-decoration: none;
+}
+
+#logbtn:hover {
+  background-color: rgb(231, 216, 74);
+  color: white;
+  border: 1ps solid red;
+  border-radius: 10px;
 }
 
 @media (max-width: 500px) {

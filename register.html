@@ -17,6 +17,12 @@
     <title>create a new account</title>
 
     <style>
+
+        /* body {
+       
+        padding: 20 20 20 20;
+        } */
+
         .btn{
             width: 100%;
             margin-bottom: 10px;
@@ -30,6 +36,8 @@
             position: relative;
             text-align: center;
             margin: 15px 0px;
+            
+            
         }
         .divider span{
             padding: 8px;
@@ -61,11 +69,12 @@
            overflow: hidden;
            width: calc(100vw-65vw);
            margin-top: 50px;
-           
+           background-color: darkgrey;
         }
        #mob{
            height: 35px;
        }
+       
        
     </style>
 
@@ -75,7 +84,7 @@
 
 
    <div class="container">
-        <div class="card bg-light"  style="background: url('2.jpg') no-repeat center fixed; " >
+        <div class="card bg-alert"  style="background: url(2.jpg) no-repeat center fixed; " >
             <div class="card-body mx-auto" >
                 <h4 class="card-title mt-3 text-center">create Account</h4>
                     <p class="text-center">Welcome to Coupon Duniya</p>
@@ -110,7 +119,7 @@
                     </script>
         </div>
  
-                        <div class="col-md-12"><a href="#" class="btn btn-primary facebook btn-primary"> <span>Login with Facebook</span> <i class="fab fa-facebook"></i> </a> </div>
+                        <div class="col-md-12"><a href="https://www.facebook.com/" class="btn btn-primary facebook btn-primary"> <span>Login with Facebook</span> <i class="fab fa-facebook"></i> </a> </div>
 
                      <p class="divider mt-3"><span class="bg-light">OR</span></p>
 
@@ -204,8 +213,8 @@
                         id="pass2"> 
                     </div>
                     <span id="pass2span" style="color: red;"></span>
-           
-                    <button type="submit" class="btn btn-block btn-success m-2" id="button3" onclick="registration()" >Create</button>
+                   
+                        <button type="submit" class="btn btn-block btn-success m-2" id="button3" onclick="registration()" >Create</button>
                     <p class="text-center mt-2" id="login">Have an Acoount?<a href="login.html" style="padding-left: 5px; font-weight: bold; color: rgb(53, 23, 161);">Log In</a></p>
                 </form>
 
